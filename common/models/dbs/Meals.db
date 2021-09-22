@@ -1,3 +1,5 @@
 {"DisplayName":"Cornflaks","Description":"Cornflaks with milk","IsVegan":true,"IsVegeterian":false,"IsMeaty":false,"IsMilky":true,"_id":"0v6ByHMhDLJezsNS"}
 {"DisplayName":"Israeli-Salad","Description":"1 Cucuber, 1 Tomato And 1 onion.","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"400n05L38ckMPCDl"}
 {"DisplayName":"Omlet","Description":"2 Eggs WIth sold","IsVegan":false,"IsVegeterian":false,"IsMeaty":false,"IsMilky":false,"_id":"56jsiKF4kCQmJGOE"}
+{"DisplayName":"Tomato","Description":"Very oily and expired tomato","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"7Ja17Apdp91Qm1l3"}
+{"DisplayName":"Shakshuka","Description":"ery oily and plastic shakshuka","IsVegan":false,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"dRGmTBuWgcZxBi9Z"}

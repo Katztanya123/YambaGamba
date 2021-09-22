@@ -14,7 +14,7 @@ usersData = [
 ];
 
 menusData = [
-  {Date: 123, DisplayName: "ארוחת ערב", MealsDisplayNames: ["Omlet","Cornflaks"]}
+  {Date: 123, DisplayName: "ארוחת ערב", Meals: ["Omlet","Cornflaks"]}
 ]
 
 mealsData = [

@@ -5,6 +5,12 @@ async function getMeal(displayName) {
     return meal;
 }
 
+async function createNewMeal(meal) {
+    let newMeal = await mealStore.createNewMealByUserInput(meal);
+    return newMeal;
+}
+
 module.exports = {
-    getMeal
+    getMeal,
+    createNewMeal
 }
