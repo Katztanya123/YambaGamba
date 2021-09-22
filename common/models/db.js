@@ -1,5 +1,5 @@
 const Datastore = require("nedb");
-const Permissions = require("./../../common/models/permissions").permissionsData;
+const Permissions = require("./permissions").permissionsData;
 
 let Meals = new Datastore();
 let Menus = new Datastore();
