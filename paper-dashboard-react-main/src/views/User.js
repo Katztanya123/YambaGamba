@@ -63,35 +63,10 @@ function User() {
                   No diggity <br />I wanna bag it up"
                 </p>
               </CardBody>
-              <CardFooter>
-                <hr />
-                <div className="button-container">
-                  <Row>
-                    <Col className="ml-auto" lg="3" md="6" xs="6">
-                      <h5>
-                        12 <br />
-                        <small>Files</small>
-                      </h5>
-                    </Col>
-                    <Col className="ml-auto mr-auto" lg="4" md="6" xs="6">
-                      <h5>
-                        2GB <br />
-                        <small>Used</small>
-                      </h5>
-                    </Col>
-                    <Col className="mr-auto" lg="3">
-                      <h5>
-                        24,6$ <br />
-                        <small>Spent</small>
-                      </h5>
-                    </Col>
-                  </Row>
-                </div>
-              </CardFooter>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle tag="h4">Team Members</CardTitle>
+                <CardTitle tag="h4">Kitchen Members</CardTitle>
               </CardHeader>
               <CardBody>
                 <ul className="list-unstyled team-members">
@@ -112,7 +87,7 @@ function User() {
                       <Col md="7" xs="7">
                         DJ Khaled <br />
                         <span className="text-muted">
-                          <small>Offline</small>
+                          <small>Out of Base</small>
                         </span>
                       </Col>
                       <Col className="text-right" md="3" xs="3">
@@ -184,8 +159,7 @@ function User() {
                           className="btn-round btn-icon"
                           color="success"
                           outline
-                          size="sm"
-                        >
+                          size="sm">
                           <i className="fa fa-envelope" />
                         </Button>
                       </Col>
@@ -198,16 +172,16 @@ function User() {
           <Col md="8">
             <Card className="card-user">
               <CardHeader>
-                <CardTitle tag="h5">Edit Profile</CardTitle>
+                <CardTitle tag="h5">Add Kitchen Worker</CardTitle>
               </CardHeader>
               <CardBody>
                 <Form>
                   <Row>
                     <Col className="pr-1" md="5">
                       <FormGroup>
-                        <label>Company (disabled)</label>
+                        <label>Company</label>
                         <Input
-                          defaultValue="Creative Code Inc."
+                          defaultValue="IDF."
                           disabled
                           placeholder="Company"
                           type="text"
@@ -218,7 +192,7 @@ function User() {
                       <FormGroup>
                         <label>Username</label>
                         <Input
-                          defaultValue="michael23"
+                          defaultValue="Username"
                           placeholder="Username"
                           type="text"
                         />
@@ -238,8 +212,8 @@ function User() {
                       <FormGroup>
                         <label>First Name</label>
                         <Input
-                          defaultValue="Chet"
-                          placeholder="Company"
+                          defaultValue=""
+                          placeholder="First Name"
                           type="text"
                         />
                       </FormGroup>
@@ -248,7 +222,7 @@ function User() {
                       <FormGroup>
                         <label>Last Name</label>
                         <Input
-                          defaultValue="Faker"
+                          defaultValue=""
                           placeholder="Last Name"
                           type="text"
                         />
@@ -296,24 +270,12 @@ function User() {
                     </Col>
                   </Row>
                   <Row>
-                    <Col md="12">
-                      <FormGroup>
-                        <label>About Me</label>
-                        <Input
-                          type="textarea"
-                          defaultValue="Oh so, your weak rhyme You doubt I'll bother, reading into it"
-                        />
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row>
                     <div className="update ml-auto mr-auto">
                       <Button
                         className="btn-round"
                         color="primary"
-                        type="submit"
-                      >
-                        Update Profile
+                        type="submit">
+                        Add Worker
                       </Button>
                     </div>
                   </Row>

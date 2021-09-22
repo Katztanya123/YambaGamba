@@ -8,7 +8,7 @@ import {
   Col,
 } from "reactstrap";
 
-function Dashboard() {
+function HafsaCookie() {
   return (
     <>
       <div className="content">
@@ -125,4 +125,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default HafsaCookie;

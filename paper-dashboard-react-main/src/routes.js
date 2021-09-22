@@ -17,11 +17,11 @@
 
 */
 import Dashboard from "views/Dashboard.js";
-import Notifications from "views/Notifications.js";
 import Icons from "views/Icons.js";
 import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
+import HafsaCookie from "./views/HafsaCookie";
 
 var routes = [
   {
@@ -45,7 +45,13 @@ var routes = [
     component: Maps,
     layout: "/admin",
   },
-  
+  {
+    path: "/hafsacookie",
+    name: "HafsaCookie",
+    icon: "nc-icon nc-pin-3",
+    component: HafsaCookie,
+    layout: "/admin",
+  },
   {
     path: "/user-page",
     name: "User Profile",
