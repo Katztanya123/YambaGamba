@@ -18,10 +18,10 @@
 */
 import Dashboard from "views/Dashboard.js";
 import Icons from "views/Icons.js";
-import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
 import HafsaCookie from "./views/HafsaCookie";
+import Dinner from "views/Dinner";
 
 var routes = [
   {
@@ -39,10 +39,10 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/maps",
+    path: "/dinner",
     name: "Dinner",
     icon: "nc-icon nc-pin-3",
-    component: Maps,
+    component: Dinner,
     layout: "/admin",
   },
   {

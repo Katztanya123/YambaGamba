@@ -20,7 +20,7 @@ import React from "react";
 // reactstrap components
 import { Card, CardFooter, CardBody, Row, Col } from "reactstrap";
 
-function Map() {
+function Dinner() {
   return (
     <>
       <div className="content">
@@ -36,7 +36,7 @@ function Map() {
                   </Col>
                   <Col md="8" xs="7">
                     <div className="numbers">
-                      <p className="card-category">Coffee</p>
+                      <p className="card-category">Veronika</p>
                       <p />
                     </div>
                   </Col>
@@ -137,4 +137,4 @@ function Map() {
   );
 }
 
-export default Map;
+export default Dinner;
