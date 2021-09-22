@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Card, CardHeader, CardBody, CardTitle, Row, Col, Form, FormGroup, Input, Button } from "reactstrap";
+import { Card, CardHeader, CardBody, CardTitle, Row, Col, Form, FormGroup, Input, Button, NavLink } from "reactstrap";
+import User from "./User";
 
 function Login() {
   return (
@@ -17,27 +18,17 @@ function Login() {
                   <Row>
                     <Col className="pr-1" md="6">
                       <FormGroup>
-                        <label>First Name</label>
+                        <label>User Name</label>
                         <Input
                           defaultValue=""
-                          placeholder="First Name"
-                          type="text"
-                        />
-                      </FormGroup>
-                    </Col>
-                    <Col className="pl-1" md="6">
-                      <FormGroup>
-                        <label>Last Name</label>
-                        <Input
-                          defaultValue=""
-                          placeholder="Last Name"
+                          placeholder="Username"
                           type="text"
                         />
                       </FormGroup>
                     </Col>
                   </Row>
                   <Row>
-                    <Col md="12">
+                  <Col className="pr-1" md="6">
                       <FormGroup>
                         <label>Password</label>
                         <Input
@@ -49,12 +40,15 @@ function Login() {
                   </Row>
                   <Row>
                     <div className="update ml-auto mr-auto">
-                      <Button
+                    <NavLink to="/admin/maps">
+                    <Button
                         className="btn-round"
                         color="primary"
-                        type="submit">
+                        type="submit"
+                        onClick={() => alert("Hello!")}>
                         Log in
                       </Button>
+                    </NavLink>
                     </div>
                   </Row>
                 </Form>
