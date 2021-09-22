@@ -78,7 +78,7 @@ function Dashboard() {
                   </Col>
                   <Col md="8" xs="7">
                     <div className="numbers">
-                      <p className="card-category">Revenue</p>
+                      <p className="card-category">Milk</p>
                       <CardTitle tag="p">$ 1,345</CardTitle>
                       <p />
                     </div>
@@ -104,7 +104,7 @@ function Dashboard() {
                   </Col>
                   <Col md="8" xs="7">
                     <div className="numbers">
-                      <p className="card-category">Errors</p>
+                      <p className="card-category">Yogurt</p>
                       <CardTitle tag="p">23</CardTitle>
                       <p />
                     </div>
@@ -130,7 +130,7 @@ function Dashboard() {
                   </Col>
                   <Col md="8" xs="7">
                     <div className="numbers">
-                      <p className="card-category">Followers</p>
+                      <p className="card-category">Cornflakes</p>
                       <CardTitle tag="p">+45K</CardTitle>
                       <p />
                     </div>
