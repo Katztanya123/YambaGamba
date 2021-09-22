@@ -13,6 +13,16 @@ usersData = [
   { Username: "refael", Password: "asd", Permission: Permissions.Soldier},
 ];
 
+menusData = [
+  {Date: 123, DisplayName: "ארוחת ערב", MealsDisplayNames: ["Omlet","Cornflaks"]}
+]
+
+mealsData = [
+  {DisplayName: "Omlet", Description: "2 Eggs WIth sold", IsVegan: false, IsVegeterian: false, IsMeaty: false, IsMilky: false},
+  {DisplayName: "Israeli-Salad", Description: "1 Cucuber, 1 Tomato And 1 onion.", IsVegan: true, IsVegeterian: true, IsMeaty: false, IsMilky: false},
+  {DisplayName: "Cornflaks", Description: "Cornflaks with milk", IsVegan: true, IsVegeterian: false, IsMeaty: false, IsMilky: true}
+]
+
 
 let initDBData = (data, db) => {
   for (const datum of data) {
@@ -20,7 +30,9 @@ let initDBData = (data, db) => {
   }
 }
 
+//initDBData(mealsData, Meals)
 //initDBData(usersData, Users);
+//initDBData(menusData, Menus);
 
 module.exports = {
   Meals,
