@@ -45,13 +45,7 @@ var routes = [
     component: Maps,
     layout: "/admin",
   },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "nc-icon nc-bell-55",
-    component: Notifications,
-    layout: "/admin",
-  },
+  
   {
     path: "/user-page",
     name: "User Profile",

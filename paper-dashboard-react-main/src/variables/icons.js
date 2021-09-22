@@ -17,18 +17,12 @@
 
 */
 const icons = [
-  {
-    name: "nc-air-baloon",
-    content: "\\ea01",
-  },
+  
   {
     name: "nc-album-2",
     content: "\\ea02",
   },
-  {
-    name: "nc-alert-circle-i",
-    content: "\\ea04",
-  },
+  
   {
     name: "nc-align-center",
     content: "\\ea03",
