@@ -4,4 +4,4 @@ const permissionsData = {
   Chef: 777
 }
 
-module.exports = { permissionsData };
+module.exports = permissionsData;

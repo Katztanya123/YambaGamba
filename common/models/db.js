@@ -1,5 +1,5 @@
 const Datastore = require("nedb");
-const Permissions = require("./permissions").permissionsData;
+const Permissions = require("./permissions");
 const path = require('path');
 
 let Meals = new Datastore({filename: path.join(__dirname, './dbs/Meals.db'), autoload: true});

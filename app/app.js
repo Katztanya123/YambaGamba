@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const menuRouter = require("./menu/menu.route");
 const mealRouter = require("./meal/meal.route");
-const loginRouter = require("./login/login.route");
+const authRouter = require("./auth/auth.route");
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 
 app.use("/menu", menuRouter);
 app.use("/meal", mealRouter);
-app.use("/login", loginRouter);
+app.use("/auth", authRouter);
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
