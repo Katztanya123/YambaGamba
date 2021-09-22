@@ -53,7 +53,6 @@ function Dashboard() {
                   <Col md="8" xs="7">
                     <div className="numbers">
                       <p className="card-category">Coffee</p>
-                      <CardTitle tag="p">150GB</CardTitle>
                       <p />
                     </div>
                   </Col>
@@ -79,7 +78,6 @@ function Dashboard() {
                   <Col md="8" xs="7">
                     <div className="numbers">
                       <p className="card-category">Milk</p>
-                      <CardTitle tag="p">$ 1,345</CardTitle>
                       <p />
                     </div>
                   </Col>
@@ -105,7 +103,6 @@ function Dashboard() {
                   <Col md="8" xs="7">
                     <div className="numbers">
                       <p className="card-category">Yogurt</p>
-                      <CardTitle tag="p">23</CardTitle>
                       <p />
                     </div>
                   </Col>
@@ -114,7 +111,7 @@ function Dashboard() {
               <CardFooter>
                 <hr />
                 <div className="stats">
-                  <i className="far fa-clock" /> In the last hour
+                  <i className="far fa-clock" /> About to expire...
                 </div>
               </CardFooter>
             </Card>
@@ -131,7 +128,6 @@ function Dashboard() {
                   <Col md="8" xs="7">
                     <div className="numbers">
                       <p className="card-category">Cornflakes</p>
-                      <CardTitle tag="p">+45K</CardTitle>
                       <p />
                     </div>
                   </Col>
