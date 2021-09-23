@@ -26,7 +26,7 @@ function Worker(props) {
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <h5 className="title">Worker {props.location.state.user}</h5>
                   </a>
-                  <p className="description">@chetfaker</p>
+                  <p className="description">@{props.location.state.user}</p>
                 </div>
               </CardBody>
             </Card>
@@ -53,21 +53,43 @@ function Worker(props) {
                   <Row>
                     <Col className="pr-1" md="6">
                       <FormGroup>
-                        <label>First Name</label>
+                        <label>Is Meaty</label>
                         <Input
                           defaultValue=""
                           placeholder="First Name"
-                          type="text"
+                          type="Checkbox"
                         />
                       </FormGroup>
                     </Col>
                     <Col className="pl-1" md="6">
                       <FormGroup>
-                        <label>Last Name</label>
+                        <label>Is Milky</label>
                         <Input
                           defaultValue=""
                           placeholder="Last Name"
-                          type="text"
+                          type="Checkbox"
+                        />
+                      </FormGroup>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col className="pr-1" md="6">
+                      <FormGroup>
+                        <label>Is Vegeterian</label>
+                        <Input
+                          defaultValue=""
+                          placeholder="First Name"
+                          type="Checkbox"
+                        />
+                      </FormGroup>
+                    </Col>
+                    <Col className="pl-1" md="6">
+                      <FormGroup>
+                        <label>Is Vegan</label>
+                        <Input
+                          defaultValue=""
+                          placeholder="Last Name"
+                          type="Checkbox"
                         />
                       </FormGroup>
                     </Col>
@@ -75,40 +97,12 @@ function Worker(props) {
                   <Row>
                     <Col md="12">
                       <FormGroup>
-                        <label>Address</label>
+                        <label>Description</label>
                         <Input
-                          defaultValue="Melbourne, Australia"
-                          placeholder="Home Address"
-                          type="text"
+                          defaultValue=""
+                          placeholder="Describe the dish..."
+                          type="textarea"
                         />
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col className="pr-1" md="4">
-                      <FormGroup>
-                        <label>City</label>
-                        <Input
-                          defaultValue="Melbourne"
-                          placeholder="City"
-                          type="text"
-                        />
-                      </FormGroup>
-                    </Col>
-                    <Col className="px-1" md="4">
-                      <FormGroup>
-                        <label>Country</label>
-                        <Input
-                          defaultValue="Australia"
-                          placeholder="Country"
-                          type="text"
-                        />
-                      </FormGroup>
-                    </Col>
-                    <Col className="pl-1" md="4">
-                      <FormGroup>
-                        <label>Postal Code</label>
-                        <Input placeholder="ZIP Code" type="number" />
                       </FormGroup>
                     </Col>
                   </Row>
@@ -118,7 +112,7 @@ function Worker(props) {
                         className="btn-round"
                         color="primary"
                         type="submit">
-                        Add Worker
+                        Add Dish
                       </Button>
                     </div>
                   </Row>
