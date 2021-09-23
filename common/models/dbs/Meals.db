@@ -1,14 +1,14 @@
 {"DisplayName":"Cornflaks","Description":"Cornflaks with milk","IsVegan":true,"IsVegeterian":false,"IsMeaty":false,"IsMilky":true,"_id":"0v6ByHMhDLJezsNS"}
+{"DisplayName":"Kuskus","Description":"The best uncooked kuskus in the world","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"3p3ekibVBgSrfU41"}
 {"DisplayName":"Israeli-Salad","Description":"1 Cucuber, 1 Tomato And 1 onion.","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"400n05L38ckMPCDl"}
 {"DisplayName":"Omlet","Description":"2 Eggs WIth sold","IsVegan":false,"IsVegeterian":false,"IsMeaty":false,"IsMilky":false,"_id":"56jsiKF4kCQmJGOE"}
 {"DisplayName":"Tomato","Description":"Very oily and expired tomato","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"7Ja17Apdp91Qm1l3"}
-{"DisplayName":"Shakshuka","Description":"ery oily and plastic shakshuka","IsVegan":false,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"dRGmTBuWgcZxBi9Z"}
-{"DisplayName":"Chicken brest","Description":"Chicken brest with red wine and onion in a lot of oil","IsVegan":false,"IsVegeterian":false,"IsMeaty":true,"IsMilky":false,"_id":"yw8FTBpyXuTe4WNh"}
-{"DisplayName":"Kuskus","Description":"The best uncooked kuskus in the world","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"3p3ekibVBgSrfU41"}
+{"DisplayName":"Fruits salad","Description":"Fruits of the seasen","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"A0Wyw9dV30HXWiXN"}
 {"DisplayName":"Pasta","Description":"Tomato souse with makaruni Pasta","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"DNHTWBum6EvqJZMk"}
 {"DisplayName":"Shoko","Description":"Cold Shoko","IsVegan":true,"IsVegeterian":false,"IsMeaty":false,"IsMilky":true,"_id":"J3kSrFOukmjzdg5k"}
-{"DisplayName":"Koteg","Description":"Cold Koteg","IsVegan":true,"IsVegeterian":false,"IsMeaty":false,"IsMilky":true,"_id":"a1c7AS9ihDDOZrnl"}
-{"DisplayName":"Batata","Description":"Cold batata with a lot of chili","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"sCOS1ZJx28yZulFo"}
-{"DisplayName":"Shnitzel A","Description":"Thin realy Shnitzel","IsVegan":false,"IsVegeterian":false,"IsMeaty":true,"IsMilky":false,"_id":"kaVzlQdhDIb1xiur"}
 {"DisplayName":"Shnitzel B","Description":"Thick fake Shnitzel","IsVegan":false,"IsVegeterian":false,"IsMeaty":true,"IsMilky":false,"_id":"QMSye27hWEwMveCL"}
-{"DisplayName":"Fruits salad","Description":"Fruits of the seasen","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"A0Wyw9dV30HXWiXN"}
+{"DisplayName":"Koteg","Description":"Cold Koteg","IsVegan":true,"IsVegeterian":false,"IsMeaty":false,"IsMilky":true,"_id":"a1c7AS9ihDDOZrnl"}
+{"DisplayName":"Shakshuka","Description":"ery oily and plastic shakshuka","IsVegan":false,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"dRGmTBuWgcZxBi9Z"}
+{"DisplayName":"Shnitzel A","Description":"Thin realy Shnitzel","IsVegan":false,"IsVegeterian":false,"IsMeaty":true,"IsMilky":false,"_id":"kaVzlQdhDIb1xiur"}
+{"DisplayName":"Batata","Description":"Cold batata with a lot of chili","IsVegan":true,"IsVegeterian":true,"IsMeaty":false,"IsMilky":false,"_id":"sCOS1ZJx28yZulFo"}
+{"DisplayName":"Chicken brest","Description":"Chicken brest with red wine and onion in a lot of oil","IsVegan":false,"IsVegeterian":false,"IsMeaty":true,"IsMilky":false,"_id":"yw8FTBpyXuTe4WNh"}

@@ -1,1 +1,0 @@
-fetch("http://loclhost:3000/menus/123").then(val => console.log(val));

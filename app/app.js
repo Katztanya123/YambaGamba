@@ -7,10 +7,10 @@ const mealRouter = require("./meal/meal.route");
 const authRouter = require("./auth/auth.route");
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = 3031;
 
 var corsOptions = {
-  origin: "http://localhost:8081",
+  origin: "*",
 };
 
 app.use(cors(corsOptions));
