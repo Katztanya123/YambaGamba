@@ -31,10 +31,7 @@ function BreakFast() {
                 </Row>
               </CardBody>
               <CardFooter>
-                <hr />
-                <div className="stats">
-                  <i className="fas fa-sync-alt" /> Update Now
-                </div>
+               
               </CardFooter>
             </Card>
           </Col>
@@ -44,7 +41,7 @@ function BreakFast() {
                 <Row>
                   <Col md="4" xs="5">
                     <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-money-coins text-success" />
+                      <i className="nc-icon nc-paper text-success" />
                     </div>
                   </Col>
                   <Col md="8" xs="7">
@@ -56,10 +53,7 @@ function BreakFast() {
                 </Row>
               </CardBody>
               <CardFooter>
-                <hr />
-                <div className="stats">
-                  <i className="far fa-calendar" /> Last day
-                </div>
+              
               </CardFooter>
             </Card>
           </Col>
@@ -81,10 +75,7 @@ function BreakFast() {
                 </Row>
               </CardBody>
               <CardFooter>
-                <hr />
-                <div className="stats">
-                  <i className="far fa-clock" /> About to expire...
-                </div>
+               
               </CardFooter>
             </Card>
           </Col>
@@ -106,10 +97,7 @@ function BreakFast() {
                 </Row>
               </CardBody>
               <CardFooter>
-                <hr />
-                <div className="stats">
-                  <i className="fas fa-sync-alt" /> Update now
-                </div>
+               
               </CardFooter>
             </Card>
           </Col>

@@ -36,17 +36,14 @@ function Dinner() {
                   </Col>
                   <Col md="8" xs="7">
                     <div className="numbers">
-                      <p className="card-category">Veronika</p>
+                      <p className="card-category">Coffee</p>
                       <p />
                     </div>
                   </Col>
                 </Row>
               </CardBody>
               <CardFooter>
-                <hr />
-                <div className="stats">
-                  <i className="fas fa-sync-alt" /> Update Now
-                </div>
+               
               </CardFooter>
             </Card>
           </Col>
@@ -68,10 +65,7 @@ function Dinner() {
                 </Row>
               </CardBody>
               <CardFooter>
-                <hr />
-                <div className="stats">
-                  <i className="far fa-calendar" /> Last day
-                </div>
+              
               </CardFooter>
             </Card>
           </Col>
@@ -93,10 +87,7 @@ function Dinner() {
                 </Row>
               </CardBody>
               <CardFooter>
-                <hr />
-                <div className="stats">
-                  <i className="far fa-clock" /> About to expire...
-                </div>
+             
               </CardFooter>
             </Card>
           </Col>
@@ -118,10 +109,7 @@ function Dinner() {
                 </Row>
               </CardBody>
               <CardFooter>
-                <hr />
-                <div className="stats">
-                  <i className="fas fa-sync-alt" /> Update now
-                </div>
+            
               </CardFooter>
             </Card>
           </Col>
