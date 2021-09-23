@@ -1,110 +1,77 @@
 import React from "react";
+import { GetMenus } from "Services/MenuService";
 
-import { Card, CardFooter, CardBody, Row, Col } from "reactstrap";
+import { Card, CardBody, CardFooter, Row, Col } from "reactstrap";
 
-function Lunch() {
-  return (
-    <>
-      <div className="content">
-        <Row>
-          <Col lg="3" md="6" sm="6">
-            <Card className="card-stats">
-              <CardBody>
-                <Row>
-                  <Col md="4" xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-globe text-warning" />
-                    </div>
-                  </Col>
-                  <Col md="8" xs="7">
-                    <div className="numbers">
-                      <p className="card-category">coffee</p>
-                      <p />
-                    </div>
-                  </Col>
-                </Row>
-              </CardBody>
-              <CardFooter>
-                
-              </CardFooter>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="4">
-            <Card className="card-stats">
-              <CardBody>
-                <Row>
-                  <Col md="4" xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-money-coins text-success" />
-                    </div>
-                  </Col>
-                  <Col md="8" xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Milk</p>
-                      <p />
-                    </div>
-                  </Col>
-                </Row>
-              </CardBody>
-              <CardFooter>
-           
-              </CardFooter>
-            </Card>
-          </Col>
-          <Col lg="3" md="6" sm="6">
-            <Card className="card-stats">
-              <CardBody>
-                <Row>
-                  <Col md="4" xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-vector text-danger" />
-                    </div>
-                  </Col>
-                  <Col md="8" xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Yogurt</p>
-                      <p />
-                    </div>
-                  </Col>
-                </Row>
-              </CardBody>
-              <CardFooter>
-            
-              </CardFooter>
-            </Card>
-          </Col>
-          <Col lg="3" md="6" sm="6">
-            <Card className="card-stats">
-              <CardBody>
-                <Row>
-                  <Col md="4" xs="5">
-                    <div className="icon-big text-center icon-warning">
-                      <i className="nc-icon nc-favourite-28 text-primary" />
-                    </div>
-                  </Col>
-                  <Col md="8" xs="7">
-                    <div className="numbers">
-                      <p className="card-category">Cornflakes</p>
-                      <p />
-                    </div>
-                  </Col>
-                </Row>
-              </CardBody>
-              <CardFooter>
-             
-              </CardFooter>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col md="12">
-          </Col>
-          <Col md="8">
-          </Col>
-        </Row>
-      </div>
-    </>
-  );
+class BreakFast extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoaded: false,
+      menu: [],
+    };
+  }
+
+  async componentDidMount() {
+    let menus = await GetMenus();
+    let menu = menus.find((menu) => menu.DisplayName === "Lunch");
+    this.setState({
+      isLoaded: true,
+      menu: menu,
+    });
+  }
+
+  render() {
+    if (this.state.isLoaded) {
+      return (
+        <div className="content">
+          {this.state.menu?.Meals.map((meal) => {
+            return (
+              <Row>
+                <Col lg="10" md="6" sm="6">
+                  <Card className="card-stats">
+                    <CardBody>
+                      <Row>
+                        <Col md="4" xs="5">
+                          <div className="icon-big text-center icon-warning">
+                            <i className="nc-icon nc-globe text-warning" />
+                          </div>
+                        </Col>
+                        <Col md="8" xs="7">
+                          <div className="numbers">
+                            <p className="card-category">{meal.DisplayName}</p>
+                            <i /> {meal.Description}
+                            <p />
+                          </div>
+                        </Col>
+                      </Row>
+                    </CardBody>
+                    <CardFooter>
+                      <hr />
+                      <div className="stats">
+                        <div>
+                          {meal.IsVegan ? "Vegan Friendly" : "Not Vegan"}
+                        </div>
+                        <div>
+                          {meal.IsVegeterian
+                            ? "Vegeterian Friendly"
+                            : "Not Vegeterian"}
+                        </div>
+                        <div>{meal.IsMilky ? "Milky" : "Not Milky"}</div>
+                        <div>{meal.IsMeaty ? "Meaty" : "Not Meaty"}</div>
+                      </div>
+                    </CardFooter>
+                  </Card>
+                </Col>
+              </Row>
+            );
+          })}
+        </div>
+      );
+    } else {
+      return <div>Loading...</div>;
+    }
+  }
 }
 
-export default Lunch;
+export default BreakFast;
