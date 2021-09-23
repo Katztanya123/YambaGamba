@@ -1,13 +1,11 @@
-import User from "views/AdminUser";
 import UpgradeToPro from "views/Upgrade.js";
 import HafsaCookie from "./views/HafsaCookie";
 import BreakFast from "./views/Breakfast";
 import Lunch from "./views/Lunch";
 import Login from "views/Login";
 import Dinner from "views/Dinner";
-import Worker from "views/Worker";
 
-var routes = [
+var sideBarRoutes = [
   {
     path: "/breakfast",
     name: "BreakFast",
@@ -44,20 +42,6 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/user-page",
-    name: "User Profile",
-    icon: "nc-icon nc-single-02",
-    component: User,
-    layout: "/admin",
-  },
-  {
-    path: "/worker",
-    name: "User Profile",
-    icon: "nc-icon nc-single-02",
-    component: Worker,
-    layout: "/admin",
-  },
-  {
     pro: true,
     path: "/upgrade",
     name: "Contact Us",
@@ -66,4 +50,4 @@ var routes = [
     layout: "/admin",
   },
 ];
-export default routes;
+export default sideBarRoutes;
