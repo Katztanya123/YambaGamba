@@ -23,40 +23,51 @@ class BreakFast extends React.Component {
 
   render() {
     if (this.state.isLoaded) {
-      return this.state.menu.Meals.map((meal) => {
-        console.log(meal);
-        return (
-          <div className="content">
-            <Row>
-              <Col lg="3" md="6" sm="6">
-                <Card className="card-stats">
-                  <CardBody>
-                    <Row>
-                      <Col md="4" xs="5">
-                        <div className="icon-big text-center icon-warning">
-                          <i className="nc-icon nc-globe text-warning" />
+      return (
+        <div className="content">
+          {this.state.menu.Meals.map((meal) => {
+            return (
+              <Row>
+                <Col lg="10" md="6" sm="6">
+                  <Card className="card-stats">
+                    <CardBody>
+                      <Row>
+                        <Col md="4" xs="5">
+                          <div className="icon-big text-center icon-warning">
+                            <i className="nc-icon nc-globe text-warning" />
+                          </div>
+                        </Col>
+                        <Col md="8" xs="7">
+                          <div className="numbers">
+                            <p className="card-category">{meal.DisplayName}</p>
+                            <i /> {meal.Description}
+                            <p />
+                          </div>
+                        </Col>
+                      </Row>
+                    </CardBody>
+                    <CardFooter>
+                      <hr />
+                      <div className="stats">
+                        <div>
+                          {meal.IsVegan ? "Vegan Friendly" : "Not Vegan"}
                         </div>
-                      </Col>
-                      <Col md="8" xs="7">
-                        <div className="numbers">
-                          <p className="card-category">{meal.DisplayName}</p>
-                          <p />
+                        <div>
+                          {meal.IsVegeterian
+                            ? "Vegeterian Friendly"
+                            : "Not Vegeterian"}
                         </div>
-                      </Col>
-                    </Row>
-                  </CardBody>
-                  <CardFooter>
-                    <hr />
-                    <div className="stats">
-                      <i className="fas fa-sync-alt" /> {meal.Description}
-                    </div>
-                  </CardFooter>
-                </Card>
-              </Col>
-            </Row>
-          </div>
-        );
-      });
+                        <div>{meal.IsMilky ? "Milky" : "Not Milky"}</div>
+                        <div>{meal.IsMeaty ? "Meaty" : "Not Meaty"}</div>
+                      </div>
+                    </CardFooter>
+                  </Card>
+                </Col>
+              </Row>
+            );
+          })}
+        </div>
+      );
     } else {
       return <div>Loading...</div>;
     }
