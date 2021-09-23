@@ -1,19 +1,24 @@
 const menuDB = require("./../../common/models/db").Menus;
 const mealController = require("./../meal/meal.controller");
 
-function getMenuByDate(date) {
+function getMenuByDay(day) {
   return new Promise((resolve, reject) => {
-    menuDB.findOne({ Date: +date }, async (err, menu) => {
+    menuDB.find({ Day: day }, async (err, menus) => {
       if (err) {
         reject(err);
       } else {
-        if (menu !== null) {
-          menu.Meals = await getAllMealsForMenu(menu);
+        if (menus !== null) {
+            let menuPromises = menus.map(async menu => {
+              menu.Meals = await getAllMealsForMenu(menu);
+              return menu;
+            })
+            let allMenus = await Promise.all(menuPromises);
+            resolve(allMenus);
         }
-        resolve(menu);
       }
     });
   });
+  
 }
 
 async function getAllMealsForMenu(menu) {
@@ -38,6 +43,6 @@ function createNewMenuByUserInput(menu) {
 }
 
 module.exports = {
-  getMenuByDate,
+  getMenuByDay,
   createNewMenuByUserInput,
 };

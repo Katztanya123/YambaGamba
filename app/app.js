@@ -23,7 +23,7 @@ app.use("/meal", mealRouter);
 app.use("/auth", authRouter);
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to YambaGamba!!!" });
 });
 
 app.listen(PORT, () => {
