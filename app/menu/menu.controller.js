@@ -1,7 +1,8 @@
 const menuStore = require("./menu.store");
 
 async function getMenu(date) {
-    let menu = await menuStore.getMenuByDate(date);
+    let menu = await menuStore.getMenuByDay(date);
+    console.log(menu);
     return menu;
 }
 

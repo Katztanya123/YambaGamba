@@ -1,2 +1,15 @@
-{"Date":125,"DisplayName":"ארוחת בוקר של יום קסום","Meals":["Tomato","Shakshuka"],"_id":"0EyunQbVCKXXGGCL"}
-{"Date":123,"DisplayName":"ארוחת ערב","Meals":["Omlet","Cornflaks"],"_id":"4KUIgxdaS01rGlwM"}
+{"Day":"Tuesday","DisplayName":"Lunch","Meals":["Pasta","Chicken brest","Batata","Israeli-Salad","Tomato"],"_id":"12FKUrtM6n5gEdLl"}
+{"Day":"Wednesday","DisplayName":"Lunch","Meals":["Kuskus","Shnitzel A","Batata","Israeli-Salad","Tomato","Shakshuka"],"_id":"1NhF1dfDF3Ky5LRT"}
+{"Day":"Thursday","DisplayName":"Dinner","Meals":["Kuskus","Koteg","Shoko","Batata","Shakshuka","Tomato","Israeli-Salad"],"_id":"BiFrizuFdeZ3paoG"}
+{"Day":"Wednesday","DisplayName":"Lunch","Meals":["Kuskus","Pasta","Shnitzel B","Batata","Tomato","Shakshuka"],"_id":"G655BkG14aKLitXq"}
+{"Day":"Monday","DisplayName":"Lunch","Meals":["Kuskus","Chicken brest","Batata","Israeli-Salad","Tomato"],"_id":"HVVdY1CKgSzW65FT"}
+{"Day":"Sunday","DisplayName":"BreakFast","Meals":["Tomato","Cornflaks","Omlet","Koteg","Shoko","Fruits salad"],"_id":"I3yps3wLlAmiuPc0"}
+{"Day":"Monday","DisplayName":"Dinner","Meals":["Kuskus","Koteg","Shoko","Batata","Shakshuka","Tomato"],"_id":"JhV7I0UpDJGswsgz"}
+{"Day":"Wednesday","DisplayName":"Dinner","Meals":["Pasta","Koteg","Batata","Shakshuka","Tomato","Israeli-Salad"],"_id":"JvCUZ0XABJtf8URE"}
+{"Day":"Thursday","DisplayName":"BreakFast","Meals":["Cornflaks","Shakshuka","Koteg","Shoko","Fruits salad"],"_id":"Kbam0z9EocwO2AR4"}
+{"Day":"Wednesday","DisplayName":"BreakFast","Meals":["Cornflaks","Omlet","Koteg","Shoko","Tomato"],"_id":"VfgR962UopWMxEjO"}
+{"Day":"Monday","DisplayName":"BreakFast","Meals":["Cornflaks","Omlet","Koteg","Shoko","Fruits salad"],"_id":"WldI8CXjPSHROYxY"}
+{"Day":"Tuesday","DisplayName":"Dinner","Meals":["Pasta","Koteg","Shoko","Kuskus","Shakshuka","Tomato","Israeli-Salad"],"_id":"emK3XjUfnq3HLlO8"}
+{"Day":"Sunday","DisplayName":"Dinner","Meals":["Kuskus","Pasta","Koteg","Shoko","Batata","Shakshuka","Tomato"],"_id":"o14jvbO2DPSx8E1M"}
+{"Day":"Sunday","DisplayName":"Lunch","Meals":["Pasta","Shnitzel B","Batata","Israeli-Salad"],"_id":"qnelmbTTaMq17VVh"}
+{"Day":"Tuesday","DisplayName":"BreakFast","Meals":["Cornflaks","Omlet","Koteg","Shoko","Tomato"],"_id":"zLg9QOepW1pXyDLx"}

@@ -3,9 +3,9 @@ const menuController = require("./menu.controller");
 
 const router = express.Router();
 
-router.get("/:date", async (req, res)  => {
+router.get("/:day", async (req, res)  => {
     try {
-        let menu = await menuController.getMenu(req.params.date);
+        let menu = await menuController.getMenu(req.params.day);
         res.send(menu);
     } catch(e) {
         throw e;
