@@ -2873,7 +2873,8 @@ License - nucleoapp.com/license/
 .nc-mobile::before {
   content: "\ea3d"; }
 
-
+.nc-money-coins::before {
+  content: "\ea3e"; }
 
 .nc-note-03::before {
   content: "\ea3f"; }
