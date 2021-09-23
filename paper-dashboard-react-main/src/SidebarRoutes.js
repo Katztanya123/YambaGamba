@@ -43,8 +43,8 @@ var sideBarRoutes = [
   },
   {
     pro: true,
-    path: "/upgrade",
-    name: "Contact Us",
+    path: "/about-us",
+    name: "About Us",
     icon: "nc-icon nc-spaceship",
     component: UpgradeToPro,
     layout: "/admin",
