@@ -1,9 +1,34 @@
 import React from "react";
 
-import { Card, CardHeader, CardBody, CardTitle, Row, Col, Form, FormGroup, Input, Button, NavLink } from "reactstrap";
-import User from "./User";
+import { Card, CardHeader, CardBody, CardTitle, Row, Col, Form, FormGroup, Input, Button, Nav, NavLink } from "reactstrap";
+import { useHistory } from "react-router-dom";
 
 function Login() {
+  const history = useHistory();
+
+  let userName = "";
+
+  const handleUserNameChange = (e) => {
+    userName = e.target.value;
+  }
+
+
+  const routeChange = (event) =>{
+    let path = "";
+
+    if (userName== "michael") {
+      path = `/admin/user-page`; 
+    } else {
+      path ='/admin/worker'
+    }
+
+    history.push({
+      pathname: path,
+      state: {user: userName}
+    });
+  }
+
+
   return (
     <>
       <div className="content">
@@ -20,9 +45,11 @@ function Login() {
                       <FormGroup>
                         <label>User Name</label>
                         <Input
+                          name="username"
                           defaultValue=""
                           placeholder="Username"
                           type="text"
+                          onChange={handleUserNameChange}
                         />
                       </FormGroup>
                     </Col>
@@ -40,15 +67,13 @@ function Login() {
                   </Row>
                   <Row>
                     <div className="update ml-auto mr-auto">
-                    <NavLink to="/admin/maps">
                     <Button
                         className="btn-round"
                         color="primary"
                         type="submit"
-                        onClick={() => alert("Hello!")}>
+                        onClick={(event) => routeChange(event)}>
                         Log in
                       </Button>
-                    </NavLink>
                     </div>
                   </Row>
                 </Form>

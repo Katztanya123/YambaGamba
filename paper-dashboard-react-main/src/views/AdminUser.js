@@ -13,7 +13,7 @@ import {
   Col,
 } from "reactstrap";
 
-function User() {
+function User(props) {
   return (
     <>
       <div className="content">
@@ -34,7 +34,7 @@ function User() {
                       className="avatar border-gray"
                       src={require("assets/img/mike.jpg").default}
                     />
-                    <h5 className="title">Chef Michael</h5>
+                    <h5 className="title">Chef Michael {props.location.state.user}</h5>
                   </a>
                   <p className="description">@chetfaker</p>
                 </div>
@@ -267,6 +267,6 @@ function User() {
       </div>
     </>
   );
-}
+} 
 
 export default User;
